@@ -33,8 +33,10 @@ class ContentRowPart extends \ContentElement
 	{
 		if (TL_MODE == 'BE')
 		{
-			$this->strTemplate = 'be_wildcard';
-			$objTemplate = new \BackendTemplate($this->strTemplate);
+			$this->Template 													= new \BackendTemplate('be_hb_rows');
+			$this->Template->element_column_small 		= $this->element_column_small;
+			$this->Template->element_column_medium 		= $this->element_column_medium;
+			$this->Template->element_column_large 		= $this->element_column_large;
 		}
 	}
 }
