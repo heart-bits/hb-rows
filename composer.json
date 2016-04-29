@@ -1,0 +1,28 @@
+{
+    "name":"heart-bits/contao-rows",
+    "description":"Rows extension for Contao Open Source CMS",
+    "keywords":["contao", "rows"],
+    "type":"contao-module",
+    "license":"LGPL-3.0+",
+    "authors":[
+        {
+            "name":"heart-bits",
+            "homepage":"http://heart-bits.com"
+        }
+    ],
+    "require":{
+        "php":">=5.3.2",
+        "contao/core-bundle":"~3.2 || ~4.1",
+        "contao-community-alliance/composer-plugin":"~2.4 || ~3.0"
+    },
+    "replace": {
+        "contao-legacy/hb-rows": "self.version"
+    },
+    "extra":{
+        "contao": {
+            "sources":{
+                "": "system/modules/hb-rows"
+            }
+        }
+    }
+}
